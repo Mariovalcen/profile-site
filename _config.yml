@@ -1,7 +1,7 @@
 title: "Mario"
 description: "Psychologist and Cybersecurity Specialist"
-baseurl: ""
-url: "https://marwire.eu" 
+baseurl: "/profile-site"  
+url: "https://mariovalcen.github.io"  # URL actual en GitHub Pages
 safe: true  
 plugins:
   - jekyll-feed
