@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #2780fc;
+  --secondary-color: #87aaf5;
+  --background-dark: #1e1e1e;
+  --background-dark-rgb: 30, 30, 30;
+  --background-light: #bdbdbd;
+  --background-gradient: linear-gradient(135deg, #16af5b, #2164f3);
+  --border-color: #e9e9e9;
+  --scroll-color: #222;
+  --scroll-thumb-color: #444;
+  --terminal-header-text: #000;
+  --terminal-header-color: #000;
+  --link-executable-color: #45d0b7; /* Color para enlaces tipo ejecutable */
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  background: var(--background-gradient);
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  background: url('/assets/img/dragon.svg') no-repeat center center;
+  background-size: 400px 400px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  opacity: 0.2;
+  z-index: 0;
+}

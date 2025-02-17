@@ -1,0 +1,48 @@
+<div class="top-panel">
+    <div class="left">
+      <span class="icon">📁</span>
+      <span class="icon">🌐</span>
+      <span class="icon">🛠️</span>
+    </div>
+    <div class="right">
+      <span class="icon">🔊</span>
+      <span class="icon">🔋</span>
+      <span class="icon">🖧</span>
+      <span class="time" id="time"></span>
+    </div>
+</div>
+
+<style>
+  .top-panel {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    z-index: 100;
+    color: #f0f0f0;
+    font-size: 14px;
+  }
+  .top-panel .left, .top-panel .right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .icon { font-size: 16px; }
+  .time { font-size: 14px; }
+</style>
+
+<script>
+  function updateTime() {
+    const now = new Date();
+    document.getElementById('time').textContent = now.toLocaleTimeString();
+  }
+  setInterval(updateTime, 1000);
+  window.onload = updateTime;
+</script>
