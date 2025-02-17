@@ -10,7 +10,7 @@
   --scroll-thumb-color: #444;
   --terminal-header-text: #000;
   --terminal-header-color: #000;
-  --link-executable-color: #45d0b7; /* Color para enlaces tipo ejecutable */
+  --link-executable-color: #45d0b7;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
 
 body::before {
   content: "";
-  background: url('/assets/img/dragon.svg') no-repeat center center;
+  background: url('{{ site.baseurl }}/assets/img/dragon.svg') no-repeat center center;
   background-size: 400px 400px;
   position: absolute;
   top: 60%;
