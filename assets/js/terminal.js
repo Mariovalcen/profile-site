@@ -27,7 +27,7 @@ function typeLine() {
     let charIndex = 0;
     const typeChar = () => {
       if (charIndex < line.text.length) {
-        newLine.innerHTML += line.text[charIndex++];
+        newLine.textContent += line.text[charIndex++];
         setTimeout(typeChar, 100);
       } else {
         index++;
@@ -36,7 +36,21 @@ function typeLine() {
     };
 
     if (line.type === 'command') {
-      typeChar();
+      const cursor = document.createElement('span');
+      cursor.className = 'cursor';
+      cursor.style = 'background-color: var(--primary-color); display: inline-block; width: 10px; height: 20px; animation: blink 0.5s infinite;';
+      newLine.appendChild(cursor);
+      const animateTyping = () => {
+        if (charIndex < line.text.length) {
+          newLine.insertBefore(document.createTextNode(line.text[charIndex++]), cursor);
+          setTimeout(animateTyping, 100);
+        } else {
+          newLine.removeChild(cursor);
+          index++;
+          typeLine();
+        }
+      };
+      animateTyping();
     } else {
       newLine.innerHTML = line.text;
       index++;
@@ -52,3 +66,4 @@ function typeLine() {
 }
 
 document.addEventListener('DOMContentLoaded', typeLine);
+
