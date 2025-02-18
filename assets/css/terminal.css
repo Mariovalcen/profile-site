@@ -1,6 +1,6 @@
 .terminal {
-  border: 5px solid var(--border-color);
-  border-radius: 8px;
+  border: 3px solid var(--border-color);
+  border-radius: 5px;
   background-color: rgba(var(--background-dark-rgb), 0.7);
   box-shadow: 0 4px 12px rgba(0,0,0,0.8);
   overflow: hidden;
