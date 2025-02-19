@@ -1,6 +1,6 @@
+
 .desktop-icons {
     position: absolute;
-    top: 60px; 
     left: 10px;
     display: flex;
     flex-direction: column;
@@ -16,14 +16,14 @@
   }
   
   .icon-img {
-    width: 60px; 
-    height: 60px;
+    width: 58px; 
+    height: 58px;
     transition: transform 0.2s, box-shadow 0.2s;
   }
   
   .icon-img:hover {
     transform: scale(1.08);
-    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8)); /* Resalta el contorno */
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8)); /* Resaltar contorno */
   }
   
   .icon-label {
@@ -32,3 +32,28 @@
     font-family: 'Fira Code', monospace;
     font-size: 10px; 
   }
+  
+  /* Responsive */
+  @media (max-width: 730px) {
+    .desktop-icons {
+      position: fixed !important;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .icon-img {
+      width: 80px; /* Reducir/aumentar tamaño en móviles */
+      height: 80px;
+    }
+  
+    /*.icon-label {
+      display: none; /* Ocultar etiquetas en móviles */
+    }/*
+  }
+  
