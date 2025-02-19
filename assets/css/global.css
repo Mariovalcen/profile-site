@@ -59,9 +59,9 @@ html, body {
 .terminal-wrapper {
   display: flex;
   flex-direction: column;  /* Asegura que el header y contenido se apilen */
-  align-items: center;      /* Centra la terminal */
+  align-items: center;    
   justify-content: flex-start; /* Evita que se sobreponga */
-  height: auto; /* Evita que se estire demasiado */
+  height: auto;
 }
 /* Ajustar los iconos de escritorio */
 .desktop-icons {
@@ -89,7 +89,7 @@ html, body {
   }
 
   .terminal-wrapper {
-    max-height: 65%; /* Ajustar la altura en móviles */
+    max-height: 90%; /* Ajustar la altura en móviles */
   }
 
   .top-panel {
