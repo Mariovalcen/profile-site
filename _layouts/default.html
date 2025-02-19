@@ -12,13 +12,18 @@
 
 </head>
 <body>
-  <div class="top-panel">
-    {% include components/top-panel/top-panel.html %}
-    <script src="{{ site.baseurl }}/assets/js/top-panel.js"></script>
-  </div>
-  {% include components/desktop-icons/desktop-icons.html %}
-  <div class="terminal-wrapper">
-    {% include components/terminal/terminal.html %}
+  <div class="main-container">
+    <div class="top-panel">
+      {% include components/top-panel/top-panel.html %}
+      <script src="{{ site.baseurl }}/assets/js/top-panel.js"></script>
+    </div>
+    <div class="terminal-wrapper">
+      {% include components/terminal/terminal.html %}
+    </div>
+    {% include components/desktop-icons/desktop-icons.html %}
   </div>
 </body>
+
+
+
 </html>
