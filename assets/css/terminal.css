@@ -5,10 +5,11 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.8);
   overflow: hidden;
   margin: 50px auto;
-  max-width: 370px;
+  width: 370px;
   height: 700px;
   display: flex;
   flex-direction: column;
+  
 }
 
 .terminal-header {
