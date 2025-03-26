@@ -4,13 +4,19 @@
   background-color: rgba(var(--background-dark-rgb), 0.7);
   box-shadow: 0 4px 12px rgba(0,0,0,0.8);
   overflow: hidden;
-  margin: 50px auto;
-  width: 370px;
-  height: 700px;
+  height: 630px;
   display: flex;
   flex-direction: column;
-  
 }
+.terminal-window {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 10;
+  width: 370px;
+}
+
 
 .terminal-header {
   display: flex;
@@ -21,14 +27,15 @@
   color: var(--terminal-header-color);
   justify-content: space-between;
   margin: 0;
+  cursor: grab;
 }
 
 .terminal-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 26px; 
-  height: 26px;
+  width: 36px; 
+  height: 36px;
 }
 
 .terminal-icon-img {

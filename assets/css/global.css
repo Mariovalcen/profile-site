@@ -78,6 +78,7 @@ html, body {
 
 /* Ajustes específicos para móviles */
 @media (max-width: 730px) {
+
   .desktop-icons {
     position: fixed;
     bottom: 5px;
@@ -86,6 +87,7 @@ html, body {
     flex-direction: row;
     width: 100%;
     justify-content: center;
+    cursor: default;
   }
 
   .terminal-wrapper {
@@ -93,6 +95,7 @@ html, body {
   }
 
   .top-panel {
-    height: 28px; /* Asegura que el panel no desaparezca */
+    height: 28px;
   }
+
 }
