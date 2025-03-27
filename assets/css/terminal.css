@@ -10,11 +10,10 @@
 }
 .terminal-window {
   position: absolute;
-  top: 42%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
+  top: 100px;
+  left: calc(50% - 235px); /* 470px es tu ancho total */
   z-index: 10;
-  width: 370px;
+  width: 470px;
 }
 
 

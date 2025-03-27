@@ -78,6 +78,12 @@ html, body {
 
 /* Ajustes específicos para móviles */
 @media (max-width: 730px) {
+  .terminal-window {
+    width: 370px !important;
+    left: 50% !important;
+    top: 100px;
+    transform: translateX(-50%) !important;
+  }
 
   .desktop-icons {
     position: fixed;
@@ -91,11 +97,11 @@ html, body {
   }
 
   .terminal-wrapper {
-    max-height: 75%; /* Ajustar la altura en móviles */
+    max-height: 75%;
   }
 
   .top-panel {
     height: 28px;
   }
-
 }
+
