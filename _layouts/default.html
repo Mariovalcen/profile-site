@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ site.title }}</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/global.css">
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/top-panel.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/desktop-icons.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/terminal.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
 
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="/assets/css/global.css" />
+  <link rel="stylesheet" href="/assets/css/terminal.css" />
+  <link rel="stylesheet" href="/assets/css/top-panel.css" />
+  <link rel="stylesheet" href="/assets/css/desktop-icons.css" />
 </head>
+
 <body>
   <div class="main-container">
+    <!-- Top Panel -->
     <div class="top-panel">
       {% include components/top-panel/top-panel.html %}
-      <script src="{{ site.baseurl }}/assets/js/top-panel.js"></script>
+      <script src="/assets/js/top-panel.js"></script>
     </div>
+
+    <!-- Terminal principal -->
     <div class="terminal-wrapper">
       {% include components/terminal/terminal.html %}
     </div>
+
+    <!-- Iconos del escritorio -->
     {% include components/desktop-icons/desktop-icons.html %}
   </div>
-  <script src="{{ site.baseurl }}/assets/js/drag-terminal.js"></script>
 
+  <!-- Scripts -->
+  <script src="/assets/js/drag-terminal.js"></script>
 </body>
-
-
-
 </html>
+

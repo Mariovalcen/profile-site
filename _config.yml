@@ -1,13 +1,14 @@
 title: "Mario"
 description: "Psychologist and Cybersecurity Specialist"
-baseurl: "/profile-site"  
-url: "https://mariovalcen.github.io"  # URL actual en GitHub Pages
-safe: true  
+baseurl: "" 
+url: "https://marwire.eu"  # Dominio personalizado
+
+safe: true
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-exclude:  
+exclude:
   - .git
   - .jekyll-cache
   - _site
@@ -15,4 +16,3 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
-
